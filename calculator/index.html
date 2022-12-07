@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <script src="numeral.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jasperj1/pointer.js@1.0.3/dist/index.min.js" defer></script>
+</head>
+
+<body class="crt rim_cursor" inner_color="white">
+    <div class="scanline"></div>
+    <main class="calculator rim_cursor" inner_color="white">
+        <div class="displayScreen crt rim_cursor" inner_color="white">
+            <div id="display" data-placeholder="0"></div>
+        </div>
+        <button id="clear" class="spanTwo textShadowOnly">AC</button>
+        <button id="%">%</button>
+        <button id="/" class="operators">÷</button>
+        <button id="7">7</button>
+        <button id="8">8</button>
+        <button id="9">9</button>
+        <button id="*" class="operators">x</button>
+        <button id="4">4</button>
+        <button id="5">5</button>
+        <button id="6" class="textShadowOnly">6</button>
+        <button id="-" class="operators">-</button>
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="+" class="operators">+</button>
+        <button id="0" class="spanTwo">0</button>
+        <button id="." class="textShadowOnly">.</button>
+        <button id="equal" class="operators">=</button>
+    </main>
+
+    <footer>
+        <div class="jesternook">
+            <img src="img/jn_logo_pixel.png" alt="logo jesternook" />
+        </div>
+        <span>
+            <p>© 2022 jesternook corporation</p>
+        </span>
+    </footer>
+</body>
+
+</html>
