@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(4, 70px);
-    grid-template-rows: repeat(7, 70px);
+    grid-template-rows: minmax(10%, auto) repeat(5, 70px);
     gap: 10px;
 }
 
@@ -252,8 +252,8 @@ footer {
 }
 
 .jesternook {
-    height: 40px;
-    width: 40px;
+    height: 2.2rem;
+    width: 2.2rem;
     transform-style: preserve-3d;
     transform: rotateY(0);
     margin: auto;
@@ -274,7 +274,7 @@ span > p{
     padding-top: 25px;
     text-align: center;
     color: #1ca25f9f;
-    font-size: small;
+    font-size: 0.7em;
 }
 
 
