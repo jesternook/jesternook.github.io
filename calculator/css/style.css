@@ -20,20 +20,20 @@ body {
     background: #1CA25E;
 }
 
+
 .calculator {
     padding-top: 5%;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 80px);
-    grid-template-rows: minmax(120px, auto) repeat(7, 80px);
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(7, 70px);
     gap: 10px;
 }
 
 .displayScreen {
     border: none;
     background-color: #151515;
-    ;
     color: white;
     grid-column: 1 / -1;
     display: flex;
@@ -86,7 +86,6 @@ section input:placeholder-shown {
     ;
     color: #1CA25E;
 }
-
 
 .spanTwo {
     grid-column: span 2;
@@ -179,17 +178,15 @@ section input:placeholder-shown {
 }
 
 @keyframes scanline {
-    0% {
-        bottom: 100%;
-    }
-
-    80% {
-        bottom: 100%;
-    }
-
-    100% {
-        bottom: 0%;
-    }
+	0% {
+		bottom: 100%;
+	}
+	80% {
+		bottom: 100%;
+	}
+	100% {
+		bottom: 0%;
+	}
 }
 
 .crt::after {
@@ -233,18 +230,20 @@ section input:placeholder-shown {
 }
 
 .scanline {
-    width: 100%;
-    height: 100px;
-    z-index: 8;
-    background: linear-gradient(0deg,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(255, 255, 255, 0.2) 10%,
-            rgba(0, 0, 0, 0.1) 100%);
-    opacity: 0.1;
-    position: absolute;
-    bottom: 100%;
-    pointer-events: none;
-    animation: scanline 10s linear infinite;
+	width: 100%;
+	height: 100px;
+	z-index: 8;
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(255, 255, 255, 0.2) 10%,
+		rgba(0, 0, 0, 0.1) 100%
+	);
+	opacity: 0.1;
+	position: absolute;
+	bottom: 100%;
+	pointer-events: none;
+	animation: scanline 10s linear infinite;
 }
 
 footer {
@@ -253,8 +252,8 @@ footer {
 }
 
 .jesternook {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     transform-style: preserve-3d;
     transform: rotateY(0);
     margin: auto;
@@ -272,7 +271,7 @@ footer {
 }
 
 span > p{
-    padding: 30px;
+    padding-top: 25px;
     text-align: center;
     color: #1ca25f9f;
     font-size: small;
